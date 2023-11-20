@@ -1,0 +1,147 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  background: #34495e;
+}
+
+.box{
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919;
+  text-align: center;
+}
+
+.box h2 {
+  color: var(--clr); 
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+.box input[type="text"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type="text"]:hover {
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+:root {
+  --clr: #0FF0FC;
+}
+
+.button {
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  transition: 0.2s;
+}
+
+.button:hover{
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 3.1rem;
+  background: var(--clr);
+  color: var(--clr);
+  animation: box 3s infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #272822;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}
+
+.button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.button i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.button:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.button i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.button:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}
+
