@@ -4,8 +4,6 @@
 
 ![image](https://github.com/5andeepNambiar/Real-Time-Chat-Application/assets/79718442/74c91665-c46c-4e06-a67f-ad8c9536a0d6)
 
-# Real-Time Chat App
-
 A real-time chat application that allows users to create and join chat rooms using unique room IDs. Users can seamlessly send and receive messages within the chat rooms and view a list of active users. The app employs advanced features like message history to ensure the continuity of the chat, even if users leave and rejoin.
 
 ## Table of Contents
